@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named playground
+
+# Build rule for target.
+playground: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playground
+.PHONY : playground
+
+# fast build rule for target.
+playground/fast:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+.PHONY : playground/fast
+
+#=============================================================================
 # Target rules for targets named COSC480
 
 # Build rule for target.
@@ -129,6 +142,7 @@ MyLib.o: MyLib.cpp.o
 
 # target to build an object file
 MyLib.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLib.cpp.o
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLib.cpp.o
 .PHONY : MyLib.cpp.o
 
@@ -138,6 +152,7 @@ MyLib.i: MyLib.cpp.i
 
 # target to preprocess a source file
 MyLib.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLib.cpp.i
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLib.cpp.i
 .PHONY : MyLib.cpp.i
 
@@ -147,8 +162,63 @@ MyLib.s: MyLib.cpp.s
 
 # target to generate assembly for a file
 MyLib.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLib.cpp.s
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLib.cpp.s
 .PHONY : MyLib.cpp.s
+
+MyLine.o: MyLine.cpp.o
+
+.PHONY : MyLine.o
+
+# target to build an object file
+MyLine.cpp.o:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.o
+.PHONY : MyLine.cpp.o
+
+MyLine.i: MyLine.cpp.i
+
+.PHONY : MyLine.i
+
+# target to preprocess a source file
+MyLine.cpp.i:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.i
+.PHONY : MyLine.cpp.i
+
+MyLine.s: MyLine.cpp.s
+
+.PHONY : MyLine.s
+
+# target to generate assembly for a file
+MyLine.cpp.s:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.s
+.PHONY : MyLine.cpp.s
+
+MyPlane.o: MyPlane.cpp.o
+
+.PHONY : MyPlane.o
+
+# target to build an object file
+MyPlane.cpp.o:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.o
+.PHONY : MyPlane.cpp.o
+
+MyPlane.i: MyPlane.cpp.i
+
+.PHONY : MyPlane.i
+
+# target to preprocess a source file
+MyPlane.cpp.i:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.i
+.PHONY : MyPlane.cpp.i
+
+MyPlane.s: MyPlane.cpp.s
+
+.PHONY : MyPlane.s
+
+# target to generate assembly for a file
+MyPlane.cpp.s:
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.s
+.PHONY : MyPlane.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,6 +247,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+playground.o: playground.cpp.o
+
+.PHONY : playground.o
+
+# target to build an object file
+playground.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.o
+.PHONY : playground.cpp.o
+
+playground.i: playground.cpp.i
+
+.PHONY : playground.i
+
+# target to preprocess a source file
+playground.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.i
+.PHONY : playground.cpp.i
+
+playground.s: playground.cpp.s
+
+.PHONY : playground.s
+
+# target to generate assembly for a file
+playground.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.s
+.PHONY : playground.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,13 +282,23 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... playground"
 	@echo "... COSC480"
 	@echo "... MyLib.o"
 	@echo "... MyLib.i"
 	@echo "... MyLib.s"
+	@echo "... MyLine.o"
+	@echo "... MyLine.i"
+	@echo "... MyLine.s"
+	@echo "... MyPlane.o"
+	@echo "... MyPlane.i"
+	@echo "... MyPlane.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... playground.o"
+	@echo "... playground.i"
+	@echo "... playground.s"
 .PHONY : help
 
 

@@ -164,3 +164,13 @@ void MyLib::getBlobs(cv::Mat *src, std::vector<cv::KeyPoint> *keyPoints) {
     detector->detect(*src, *keyPoints);
 
 }
+
+Eigen::Vector4d MyLib::getHomogeneousFromEuclidean(Eigen::Vector3d v) {
+    Eigen::Vector4d v_(v[0], v[1], v[2], 1);
+    return v_;
+}
+
+Eigen::Vector3d MyLib::getEuclideanFromHomogeneous(Eigen::Vector4d v) {
+    Eigen::Vector3d v_(v[0] / v[3], v[1] / v[3], v[2] / v[3]);
+    return v_;
+}

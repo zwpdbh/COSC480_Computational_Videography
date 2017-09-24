@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zw/code/C++_Projects/COSC480/MyLib.cpp
+opencv2/core.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/highgui.hpp
+-
+opencv2/videoio.hpp
+-
+MyLib.h
+/Users/zw/code/C++_Projects/COSC480/MyLib.h
+iostream
+-
+
+/Users/zw/code/C++_Projects/COSC480/MyLib.h
+opencv2/core/mat.hpp
+-
+opencv2/opencv.hpp
+-
+Eigen/Dense
+-
+
+/Users/zw/code/C++_Projects/COSC480/playground.cpp
+Eigen/Dense
+-
+iostream
+-
+MyLib.h
+/Users/zw/code/C++_Projects/COSC480/MyLib.h
+
