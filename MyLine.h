@@ -9,19 +9,14 @@
 
 class MyLine {
 private:
-    Eigen::Vector4d p1;
-    Eigen::Vector4d p2;
-    Eigen::Vector3d lineDirection;
-    Eigen::Vector3d p3d1;
-    Eigen::Vector3d p3d2;
+    Eigen::Vector4d *p1;
+    Eigen::Vector4d *p2;
+    Eigen::Vector3d *lineDirection;
+    Eigen::Vector3d *p3d1;
+    Eigen::Vector3d *p3d2;
 
 public:
-    MyLine(Eigen::Vector4d p1, Eigen::Vector4d p2);
-    MyLine(Eigen::Vector3d p1, Eigen::Vector3d p2);
-    MyLine(Eigen::Vector3d lineDirection);
-
-    Eigen::Vector3d getP0();
-    Eigen::Vector3d getLineDirection();
+    MyLine();
 };
 
 

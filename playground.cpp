@@ -5,18 +5,19 @@
 #include <Eigen/Dense>
 #include <iostream>
 #include "MyLib.h"
+#include "MyPlane.h"
 
 using Eigen::MatrixXd;
+using Eigen::Vector3d;
+
 using namespace std;
 
 int main(int argc, char* argv[]) {
+    Vector3d normV(1, 1, -1);
+    Vector3d p(0, 0, -1);
+    MyPlane pi(normV, p);
 
-    Eigen::Vector3d v1(10, 20, 30);
-    Eigen::Vector3d v2(1, 2, 3);
+    Vector3d q(1, 0, 2);
 
-    std::cout << v1 - v2 << endl;
-    v1.normalize();
-    std:cout << v1 << endl;
-    return 0;
-
+    cout << pi.distanceFromPoint(q);
 }

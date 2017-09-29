@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/zw/code/C++_Projects/COSC480/Camera.h
+Eigen/Dense
+-
+
 /Users/zw/code/C++_Projects/COSC480/MyLib.cpp
 opencv2/core.hpp
 -
@@ -27,6 +31,20 @@ opencv2/opencv.hpp
 -
 Eigen/Dense
 -
+MyLine.h
+/Users/zw/code/C++_Projects/COSC480/MyLine.h
+MyPlane.h
+/Users/zw/code/C++_Projects/COSC480/MyPlane.h
+Camera.h
+/Users/zw/code/C++_Projects/COSC480/Camera.h
+
+/Users/zw/code/C++_Projects/COSC480/MyLine.h
+Eigen/Dense
+-
+
+/Users/zw/code/C++_Projects/COSC480/MyPlane.h
+Eigen/Dense
+-
 
 /Users/zw/code/C++_Projects/COSC480/playground.cpp
 Eigen/Dense
@@ -35,4 +53,6 @@ iostream
 -
 MyLib.h
 /Users/zw/code/C++_Projects/COSC480/MyLib.h
+MyPlane.h
+/Users/zw/code/C++_Projects/COSC480/MyPlane.h
 

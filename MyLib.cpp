@@ -14,12 +14,17 @@ using namespace std;
 using namespace cv;
 
 /**
+ * default constructor
+ * */
+MyLib::MyLib() {}
+
+/**
  * static method which show the optical flow result
  */
-void MyLib::displayOpticalFlow(cv::Mat *flow, std::string windowName) {
+void MyLib::displayOpticalFlow(cv::Mat& flow, std::string windowName) {
     //extraxt x and y channels
     cv::Mat xy[2]; //X,Y
-    cv::split(*flow, xy);
+    cv::split(flow, xy);
 
     //calculate angle and magnitude
     cv::Mat magnitude, angle;
@@ -108,34 +113,34 @@ void MyLib::screenshotFromVideo(const char *fileName, std::string savedPath) {
 /**
  * dilation
  */
-void MyLib::dilation(cv::Mat *src, cv::Mat *dst, int dilation_size, int dilation_type) {
+void MyLib::dilation(cv::Mat& src, cv::Mat& dst, int dilation_size, int dilation_type) {
     Mat kernel = getStructuringElement(
             dilation_type,
             Size_<int>(2 * dilation_size + 1, 2 * dilation_size + 1),
             Point_<int>(dilation_size, dilation_size)
     );
 
-    dilate(*src, *dst, kernel);
+    dilate(src, dst, kernel);
 }
 
 /**
  * erosion
  */
-void MyLib::erosion(cv::Mat *src, cv::Mat *dst, int erosion_size = 0, int erosion_type = MORPH_RECT) {
+void MyLib::erosion(cv::Mat& src, cv::Mat& dst, int erosion_size = 0, int erosion_type = MORPH_RECT) {
     Mat kernel = getStructuringElement(
             erosion_type,
             Size_<int>(2 * erosion_size + 1, 2*erosion_size + 1),
             Point_<int>(erosion_size, erosion_size)
     );
 
-    erode(*src, *dst, kernel);
+    erode(src, dst, kernel);
 }
 
 
 /**
  * get blobs
  */
-void MyLib::getBlobs(cv::Mat *src, std::vector<cv::KeyPoint> *keyPoints) {
+void MyLib::getBlobs(cv::Mat& src, std::vector<cv::KeyPoint>& keyPoints) {
     SimpleBlobDetector::Params params;
 
     // Change thresholds
@@ -161,16 +166,12 @@ void MyLib::getBlobs(cv::Mat *src, std::vector<cv::KeyPoint> *keyPoints) {
     Ptr<SimpleBlobDetector> detector = SimpleBlobDetector::create(params);
 
     //    Ptr<SimpleBlobDetector> detector = SimpleBlobDetector::create();
-    detector->detect(*src, *keyPoints);
-
+    detector->detect(src, keyPoints);
 }
 
-Eigen::Vector4d MyLib::getHomogeneousFromEuclidean(Eigen::Vector3d v) {
-    Eigen::Vector4d v_(v[0], v[1], v[2], 1);
-    return v_;
-}
-
-Eigen::Vector3d MyLib::getEuclideanFromHomogeneous(Eigen::Vector4d v) {
-    Eigen::Vector3d v_(v[0] / v[3], v[1] / v[3], v[2] / v[3]);
-    return v_;
+/**
+ * Given two point in 3D, compute their Euclidean distance
+ */
+double MyLib::distanceBetween(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2) {
+    return sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2) + pow(p1[2] - p2[2], 2));
 }

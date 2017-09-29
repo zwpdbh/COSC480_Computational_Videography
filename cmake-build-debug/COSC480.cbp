@@ -126,6 +126,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Camera.cpp">
+			<Option target="COSC480"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Camera.h">
+			<Option target="COSC480"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyLib.cpp">
 			<Option target="playground"/>
 			<Option target="COSC480"/>
