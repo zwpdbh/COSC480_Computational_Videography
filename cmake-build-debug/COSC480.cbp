@@ -141,15 +141,19 @@
 			<Option target="COSC480"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyLine.cpp">
+			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyLine.h">
+			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyPlane.cpp">
+			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyPlane.h">
+			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/main.cpp">

@@ -8,7 +8,7 @@
 
 using namespace std;
 
-MyPlane::MyPlane() {};
+
 
 /**
  * a plane can be formed by three points
@@ -23,10 +23,11 @@ MyPlane::MyPlane(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2, const Eig
     this->p = this->p3;
 
     this->homoPi << this->normV[0],
-                    this->normV[1],
-                    this->normV[2],
-                    -this->p3.dot(this->p1.cross(this->p2));
+            this->normV[1],
+            this->normV[2],
+            -this->p3.dot(this->p1.cross(this->p2));
 }
+
 
 /**
  * a plane can be defined by a point on plane and a norm vector
@@ -34,7 +35,35 @@ MyPlane::MyPlane(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2, const Eig
 MyPlane::MyPlane(const Eigen::Vector3d &normV, const Eigen::Vector3d &p) {
     this->p = p;
     this->normV = normV;
+    this->p3 = this->p;
+
     /*how to just arbitrary give two points on that plane*/
+    double d = this->normV.dot(this->p);
+
+    if (this->normV[2] != 0) {
+        /*take x = 1, y =1, compute z*/
+        double z1 = (d - (this->normV[0] + this->normV[1])) / this->normV[2];
+
+        /*take x = 1, y = -1*/
+        double z2 = (d - (this->normV[0] - this->normV[1])) / this->normV[2];
+
+        Eigen::Vector3d p1(1, 1, z1);
+        Eigen::Vector3d p2(1, -1, z2);
+
+        this->p1 = p1;
+        this->p2 = p2;
+    } else {
+        Eigen::Vector3d p1(1, 1, 0);
+        Eigen::Vector3d p2(1, -1, 0);
+
+        this->p1 = p1;
+        this->p2 = p2;
+    }
+
+    this->homoPi << this->normV[0],
+            this->normV[1],
+            this->normV[2],
+            -this->p3.dot(this->p1.cross(this->p2));
 }
 
 

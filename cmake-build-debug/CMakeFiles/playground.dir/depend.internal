@@ -7,6 +7,18 @@ CMakeFiles/playground.dir/MyLib.cpp.o
  /Users/zw/code/C++_Projects/COSC480/MyLib.h
  /Users/zw/code/C++_Projects/COSC480/MyLine.h
  /Users/zw/code/C++_Projects/COSC480/MyPlane.h
+CMakeFiles/playground.dir/MyLine.cpp.o
+ /Users/zw/code/C++_Projects/COSC480/Camera.h
+ /Users/zw/code/C++_Projects/COSC480/MyLib.h
+ /Users/zw/code/C++_Projects/COSC480/MyLine.cpp
+ /Users/zw/code/C++_Projects/COSC480/MyLine.h
+ /Users/zw/code/C++_Projects/COSC480/MyPlane.h
+CMakeFiles/playground.dir/MyPlane.cpp.o
+ /Users/zw/code/C++_Projects/COSC480/Camera.h
+ /Users/zw/code/C++_Projects/COSC480/MyLib.h
+ /Users/zw/code/C++_Projects/COSC480/MyLine.h
+ /Users/zw/code/C++_Projects/COSC480/MyPlane.cpp
+ /Users/zw/code/C++_Projects/COSC480/MyPlane.h
 CMakeFiles/playground.dir/playground.cpp.o
  /Users/zw/code/C++_Projects/COSC480/Camera.h
  /Users/zw/code/C++_Projects/COSC480/MyLib.h

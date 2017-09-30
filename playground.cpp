@@ -7,17 +7,19 @@
 #include "MyLib.h"
 #include "MyPlane.h"
 
-using Eigen::MatrixXd;
-using Eigen::Vector3d;
-
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    Vector3d normV(1, 1, -1);
-    Vector3d p(0, 0, -1);
+    Eigen::Vector3d normV(1, 1, 1);
+    Eigen::Vector3d p(0, 0, 1000);
+
     MyPlane pi(normV, p);
 
-    Vector3d q(1, 0, 2);
+    Eigen::Vector3d q(0, 0, 0);
 
-    cout << pi.distanceFromPoint(q);
+    cout << pi.distanceFromPoint(q) << endl;
+
+
+    Eigen::Vector3d n(2, 2, 0);
+    cout << "n's length is : " << n.norm();
 }

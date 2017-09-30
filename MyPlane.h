@@ -9,7 +9,6 @@
 
 class MyPlane {
 public:
-    MyPlane();
     MyPlane(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2, const Eigen::Vector3d &p3);
     MyPlane(const Eigen::Vector3d &normV, const Eigen::Vector3d &p);
 

@@ -199,6 +199,7 @@ MyLine.o: MyLine.cpp.o
 
 # target to build an object file
 MyLine.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLine.cpp.o
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.o
 .PHONY : MyLine.cpp.o
 
@@ -208,6 +209,7 @@ MyLine.i: MyLine.cpp.i
 
 # target to preprocess a source file
 MyLine.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLine.cpp.i
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.i
 .PHONY : MyLine.cpp.i
 
@@ -217,6 +219,7 @@ MyLine.s: MyLine.cpp.s
 
 # target to generate assembly for a file
 MyLine.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLine.cpp.s
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.s
 .PHONY : MyLine.cpp.s
 
@@ -226,6 +229,7 @@ MyPlane.o: MyPlane.cpp.o
 
 # target to build an object file
 MyPlane.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyPlane.cpp.o
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.o
 .PHONY : MyPlane.cpp.o
 
@@ -235,6 +239,7 @@ MyPlane.i: MyPlane.cpp.i
 
 # target to preprocess a source file
 MyPlane.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyPlane.cpp.i
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.i
 .PHONY : MyPlane.cpp.i
 
@@ -244,6 +249,7 @@ MyPlane.s: MyPlane.cpp.s
 
 # target to generate assembly for a file
 MyPlane.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyPlane.cpp.s
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.s
 .PHONY : MyPlane.cpp.s
 
