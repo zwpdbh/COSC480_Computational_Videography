@@ -9,9 +9,15 @@
 /Users/zw/code/C++_Projects/COSC480/Camera.cpp
 Camera.h
 /Users/zw/code/C++_Projects/COSC480/Camera.h
+math.h
+-
+MyLib.h
+/Users/zw/code/C++_Projects/COSC480/MyLib.h
 
 /Users/zw/code/C++_Projects/COSC480/Camera.h
 Eigen/Dense
+-
+Eigen/Geometry
 -
 opencv2/core.hpp
 -

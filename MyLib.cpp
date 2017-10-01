@@ -189,3 +189,12 @@ Eigen::Vector3d MyLib::getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v
         return (Eigen::Vector3d)nullptr;
     }
 }
+
+double MyLib::getRadian(double degree) {
+    return degree * 3.14159265 / 180.0;
+}
+
+cv::Mat MyLib::getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation) {
+    Mat roationMat(3, 3, CV_32FC1);
+    return roationMat;
+}

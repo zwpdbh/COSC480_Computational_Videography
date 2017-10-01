@@ -3,6 +3,9 @@
 
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../Camera.cpp
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../Camera.h
+CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyLib.h
+CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyLine.h
+CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyPlane.h
 
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../Camera.h
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../MyLib.cpp

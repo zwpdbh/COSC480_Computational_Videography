@@ -29,6 +29,10 @@ public:
     static Eigen::Vector4d getCorrespondingHomogeneousOneFrom(const Eigen::Vector3d &v);
 
     static Eigen::Vector3d getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v);
+
+    static double getRadian(double degree);
+
+    static cv::Mat getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation);
 };
 
 

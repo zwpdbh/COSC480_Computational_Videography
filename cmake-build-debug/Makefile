@@ -142,6 +142,7 @@ Camera.o: Camera.cpp.o
 
 # target to build an object file
 Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Camera.cpp.o
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Camera.cpp.o
 .PHONY : Camera.cpp.o
 
@@ -151,6 +152,7 @@ Camera.i: Camera.cpp.i
 
 # target to preprocess a source file
 Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Camera.cpp.i
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Camera.cpp.i
 .PHONY : Camera.cpp.i
 
@@ -160,6 +162,7 @@ Camera.s: Camera.cpp.s
 
 # target to generate assembly for a file
 Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Camera.cpp.s
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
