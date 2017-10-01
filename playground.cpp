@@ -10,16 +10,15 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    Eigen::Vector3d normV(1, 1, 1);
-    Eigen::Vector3d p(0, 0, 1000);
+    Eigen::Vector3d normV(10, 2, 1);
+    Eigen::Vector3d p(14, 5, 11);
 
     MyPlane pi(normV, p);
+    cout << "p1 = " << endl << pi.getP1() << endl;
+    cout << "p2 = " << endl << pi.getP2() << endl;
+    cout << "p3 = " << endl << pi.getP3() << endl;
 
     Eigen::Vector3d q(0, 0, 0);
-
     cout << pi.distanceFromPoint(q) << endl;
-
-
-    Eigen::Vector3d n(2, 2, 0);
-    cout << "n's length is : " << n.norm();
+    cout << "normV is\n" << pi.getNormV();
 }

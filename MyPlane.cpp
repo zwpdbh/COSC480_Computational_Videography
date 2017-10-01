@@ -9,7 +9,6 @@
 using namespace std;
 
 
-
 /**
  * a plane can be formed by three points
  */
@@ -35,6 +34,7 @@ MyPlane::MyPlane(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2, const Eig
 MyPlane::MyPlane(const Eigen::Vector3d &normV, const Eigen::Vector3d &p) {
     this->p = p;
     this->normV = normV;
+    this->normV.normalize();
     this->p3 = this->p;
 
     /*how to just arbitrary give two points on that plane*/
