@@ -47,7 +47,7 @@ const void Camera::updateCameraSetting(double thetaX, double thetaY, double thet
 
 cv::Point Camera::getPorjectedPointOnImageFrom(const cv::Point3d &p) {
     cout << "computing the projected point on image..." << endl;
-//    cv::Mat point_in_3D(1, 1, CV_32FC3);
+
     cv::Mat point_in_3D(3, 1, CV_32FC1);
     point_in_3D.at<double>(0, 0) = p.x;
     point_in_3D.at<double>(1, 0) = p.y;
