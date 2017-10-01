@@ -175,3 +175,17 @@ void MyLib::getBlobs(cv::Mat& src, std::vector<cv::KeyPoint>& keyPoints) {
 double MyLib::distanceBetween(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2) {
     return sqrt(pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2) + pow(p1[2] - p2[2], 2));
 }
+
+/*transform a Euclidean vector into Homogeneous one*/
+Eigen::Vector4d MyLib::getCorrespondingHomogeneousOneFrom(const Eigen::Vector3d &v) {
+    return Eigen::Vector4d(v[0], v[1], v[2], 1);
+}
+
+/*transform a Homogeneous vector into Euclidean one*/
+Eigen::Vector3d MyLib::getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v) {
+    if (v[3] != 0) {
+        return Eigen::Vector3d(v[0] / v[3], v[1] / v[3], v[2] / v[3]);
+    } else {
+        return (Eigen::Vector3d)nullptr;
+    }
+}

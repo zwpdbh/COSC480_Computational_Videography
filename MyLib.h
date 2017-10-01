@@ -24,6 +24,11 @@ public:
 
     /*compute distance between two point*/
     static double distanceBetween(const Eigen::Vector3d &p1, const Eigen::Vector3d &p2);
+
+    /*transform a Euclidean vector into Homogeneous one*/
+    static Eigen::Vector4d getCorrespondingHomogeneousOneFrom(const Eigen::Vector3d &v);
+
+    static Eigen::Vector3d getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v);
 };
 
 

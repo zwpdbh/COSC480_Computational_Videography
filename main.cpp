@@ -66,10 +66,10 @@ void processVideo(string videoFilename) {
         putText(frame, frameNumberString.c_str(), cv::Point(15,15), FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 0, 0));
 
         //show the current frame and the fg masks
-        lib.erosion(&fgMaskMOG2, &fgMaskMOG2, 1, MORPH_ELLIPSE);
+        lib.erosion(fgMaskMOG2, fgMaskMOG2, 1, MORPH_ELLIPSE);
         threshold(fgMaskMOG2, fgMaskMOG2, 20, 255, 1);
 
-        lib.getBlobs(&fgMaskMOG2, &keyPoints);
+        lib.getBlobs(fgMaskMOG2, keyPoints);
         drawKeypoints(fgMaskMOG2, keyPoints, fgMaskMOG2, Scalar_<int>(0,0,255), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
         // need some way to get the near by points

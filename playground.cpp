@@ -22,12 +22,11 @@ int main(int argc, char* argv[]) {
     cout << pi.distanceFromPoint(q) << endl;
     cout << "normV is\n" << pi.getNormV();
 
-    Eigen::Vector3d p1(1, 1, 149);
+    Eigen::Vector3d p1(1, 1, 99);
     Eigen::Vector3d p2(1, -1, 153);
     Eigen::Vector3d p3(14, 5, 11);
     MyPlane pi2(p1, p2, p3);
 
     cout << endl <<  pi2.distanceFromPoint(q) << endl;
     cout << endl << pi2.getNormV() << endl;
-
 }
