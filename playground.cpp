@@ -33,17 +33,8 @@ int main(int argc, char* argv[]) {
 
     Camera camera;
     Eigen::Vector3d translation(0, 1, 20);
-    camera.updateCameraSetting(0, 0, 0, translation, 1000, 320, 240);
+    camera.updateCameraSetting(0, 0, 0, translation, 1200, 320, 240);
 
-//    Eigen::Matrix<double, 3, 3> rotation = camera.getRotation();
-//    double m[3][3] = {
-//            {rotation(0, 0), rotation(0, 1), rotation(0, 2)},
-//            {rotation(1, 0), rotation(1, 1), rotation(1, 2)},
-//            {rotation(2, 0), rotation(2, 1), rotation(2, 2)}
-//    };
-//    cv::Mat mat(3, 3, CV_32F, m);
-//    cout << mat << endl;
-
-    cv::Point3_<double> p(0, 0, 0);
+    cv::Point3_<double> p(1, 2, 3);
     cout << "the origin at image: \n" << camera.getPorjectedPointOnImageFrom(p) << endl;
 }

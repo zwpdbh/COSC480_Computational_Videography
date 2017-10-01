@@ -190,11 +190,23 @@ Eigen::Vector3d MyLib::getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v
     }
 }
 
+/**
+ * helper function which get radian from degree
+ */
 double MyLib::getRadian(double degree) {
     return degree * 3.14159265 / 180.0;
 }
 
+
+/**
+ * try to get OpenCV Mat from Eigen Matrix.
+ */
 cv::Mat MyLib::getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation) {
-    Mat roationMat(3, 3, CV_32FC1);
-    return roationMat;
+    double m[3][3] = {
+            {rotation(0, 0), rotation(0, 1), rotation(0, 2)},
+            {rotation(1, 0), rotation(1, 1), rotation(1, 2)},
+            {rotation(2, 0), rotation(2, 1), rotation(2, 2)}
+    };
+    cv::Mat mat(3, 3, CV_32F, m);
+    return mat;
 }

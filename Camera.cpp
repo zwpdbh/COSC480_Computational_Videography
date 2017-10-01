@@ -5,6 +5,7 @@
 #include "Camera.h"
 #include <math.h>
 #include "MyLib.h"
+#include <opencv2/core/eigen.hpp>
 
 using namespace std;
 
@@ -45,9 +46,34 @@ const void Camera::updateCameraSetting(double thetaX, double thetaY, double thet
 }
 
 cv::Point Camera::getPorjectedPointOnImageFrom(const cv::Point3d &p) {
-    cv::Mat M(1, 1, CV_32FC1, cv::Scalar(p.x, p.y, p.z));
+    cout << "computing the projected point on image..." << endl;
+//    cv::Mat point_in_3D(1, 1, CV_32FC3);
+    cv::Mat point_in_3D(3, 1, CV_32FC1);
+    point_in_3D.at<double>(0, 0) = p.x;
+    point_in_3D.at<double>(1, 0) = p.y;
+    point_in_3D.at<double>(2, 0) = p.z;
+    cout << point_in_3D << endl;
 
-
+//    // from eigen matrix get opencv mat
+//    cv::Mat rotationMat(3, 3, CV_32FC1);
+//    cv::eigen2cv(this->rotation, rotationMat);
+//    cv::Mat rotationVector(3, 1, CV_32FC1);
+//    cv::Rodrigues(rotationMat, rotationVector);
+//
+//    cv::Mat translationVector(3, 1, CV_32FC1);
+//    cv::eigen2cv(this->translation, translationVector);
+//    cout << translationVector << endl;
+//
+//    cv::Mat intrinsicMat(3, 3, CV_32FC1);
+//    cv::eigen2cv(this->intrinsics, intrinsicMat);
+//
+//    cv::Mat distCoeffs(8, 1, CV_32FC1, cv::Scalar_<int>(0));
+//
+//    // the projected point
+//    cv::Mat point_on_image(1, 1, CV_32FC2);
+//
+//    cv::projectPoints(point_in_3D, rotationVector, translationVector, intrinsicMat, distCoeffs, point_on_image);
+//    return cv::Point_<double>(point_on_image.at<double>(0, 0), point_on_image.at<double>(0, 1));
 
     return cv::Point();
 }
