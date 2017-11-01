@@ -182,12 +182,29 @@ Eigen::Vector4d MyLib::getCorrespondingHomogeneousOneFrom(const Eigen::Vector3d 
 }
 
 /*transform a Homogeneous vector into Euclidean one*/
-Eigen::Vector3d MyLib::getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v) {
+Eigen::Vector3d MyLib::getVector3dFromVector4d(const Eigen::Vector4d &v) {
     if (v[3] != 0) {
         return Eigen::Vector3d(v[0] / v[3], v[1] / v[3], v[2] / v[3]);
     } else {
         return (Eigen::Vector3d)nullptr;
     }
+}
+
+/**transform a Homogeneous vector into Euclidean one*/
+Eigen::Vector2d MyLib::getVector2dFromVector3d(const Eigen::Vector3d &v) {
+    if (v[2] != 0) {
+        return Eigen::Vector2d(v[0] / v[2], v[1] / v[2]);
+    } else {
+        return (Eigen::Vector2d) nullptr;
+    }
+}
+
+Eigen::Vector3d MyLib::getVector3dFromPoint2d(const cv::Point_<double>& point) {
+    return Eigen::Vector3d(point.x, point.y, 1);
+}
+
+Eigen::Vector4d MyLib::getVector4dFromVector3d(const Eigen::Vector3d &v) {
+    return Eigen::Vector4d(v[0], v[1], v[2], 1);
 }
 
 /**

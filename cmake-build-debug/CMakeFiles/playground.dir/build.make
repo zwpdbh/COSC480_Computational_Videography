@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -105,33 +105,9 @@ CMakeFiles/playground.dir/MyLib.cpp.o.provides: CMakeFiles/playground.dir/MyLib.
 CMakeFiles/playground.dir/MyLib.cpp.o.provides.build: CMakeFiles/playground.dir/MyLib.cpp.o
 
 
-CMakeFiles/playground.dir/MyLine.cpp.o: CMakeFiles/playground.dir/flags.make
-CMakeFiles/playground.dir/MyLine.cpp.o: ../MyLine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/playground.dir/MyLine.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/MyLine.cpp.o -c /Users/zw/code/C++_Projects/COSC480/MyLine.cpp
-
-CMakeFiles/playground.dir/MyLine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playground.dir/MyLine.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/MyLine.cpp > CMakeFiles/playground.dir/MyLine.cpp.i
-
-CMakeFiles/playground.dir/MyLine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playground.dir/MyLine.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/MyLine.cpp -o CMakeFiles/playground.dir/MyLine.cpp.s
-
-CMakeFiles/playground.dir/MyLine.cpp.o.requires:
-
-.PHONY : CMakeFiles/playground.dir/MyLine.cpp.o.requires
-
-CMakeFiles/playground.dir/MyLine.cpp.o.provides: CMakeFiles/playground.dir/MyLine.cpp.o.requires
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/MyLine.cpp.o.provides.build
-.PHONY : CMakeFiles/playground.dir/MyLine.cpp.o.provides
-
-CMakeFiles/playground.dir/MyLine.cpp.o.provides.build: CMakeFiles/playground.dir/MyLine.cpp.o
-
-
 CMakeFiles/playground.dir/MyPlane.cpp.o: CMakeFiles/playground.dir/flags.make
 CMakeFiles/playground.dir/MyPlane.cpp.o: ../MyPlane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/playground.dir/MyPlane.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/playground.dir/MyPlane.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/MyPlane.cpp.o -c /Users/zw/code/C++_Projects/COSC480/MyPlane.cpp
 
 CMakeFiles/playground.dir/MyPlane.cpp.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/playground.dir/MyPlane.cpp.o.provides.build: CMakeFiles/playground.di
 
 CMakeFiles/playground.dir/Camera.cpp.o: CMakeFiles/playground.dir/flags.make
 CMakeFiles/playground.dir/Camera.cpp.o: ../Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/playground.dir/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/playground.dir/Camera.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/Camera.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Camera.cpp
 
 CMakeFiles/playground.dir/Camera.cpp.i: cmake_force
@@ -181,7 +157,6 @@ CMakeFiles/playground.dir/Camera.cpp.o.provides.build: CMakeFiles/playground.dir
 playground_OBJECTS = \
 "CMakeFiles/playground.dir/playground.cpp.o" \
 "CMakeFiles/playground.dir/MyLib.cpp.o" \
-"CMakeFiles/playground.dir/MyLine.cpp.o" \
 "CMakeFiles/playground.dir/MyPlane.cpp.o" \
 "CMakeFiles/playground.dir/Camera.cpp.o"
 
@@ -190,12 +165,11 @@ playground_EXTERNAL_OBJECTS =
 
 playground: CMakeFiles/playground.dir/playground.cpp.o
 playground: CMakeFiles/playground.dir/MyLib.cpp.o
-playground: CMakeFiles/playground.dir/MyLine.cpp.o
 playground: CMakeFiles/playground.dir/MyPlane.cpp.o
 playground: CMakeFiles/playground.dir/Camera.cpp.o
 playground: CMakeFiles/playground.dir/build.make
 playground: CMakeFiles/playground.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable playground"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/playground.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -205,7 +179,6 @@ CMakeFiles/playground.dir/build: playground
 
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/playground.cpp.o.requires
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/MyLib.cpp.o.requires
-CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/MyLine.cpp.o.requires
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/MyPlane.cpp.o.requires
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/Camera.cpp.o.requires
 

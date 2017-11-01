@@ -8,7 +8,6 @@
 #include <opencv2/core/mat.hpp>
 #include <opencv2/opencv.hpp>
 #include <Eigen/Dense>
-#include "MyLine.h"
 #include "MyPlane.h"
 #include "Camera.h"
 
@@ -28,10 +27,11 @@ public:
     /*transform a Euclidean vector into Homogeneous one*/
     static Eigen::Vector4d getCorrespondingHomogeneousOneFrom(const Eigen::Vector3d &v);
 
-    static Eigen::Vector3d getCorrespondingEuclideanOneFrom(const Eigen::Vector4d &v);
-
+    static Eigen::Vector3d getVector3dFromVector4d(const Eigen::Vector4d& v);
+    static Eigen::Vector2d getVector2dFromVector3d(const Eigen::Vector3d& v);
+    static Eigen::Vector3d getVector3dFromPoint2d(const cv::Point_<double>& point);
+    static Eigen::Vector4d getVector4dFromVector3d(const Eigen::Vector3d& v);
     static double getRadian(double degree);
-
     static cv::Mat getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation);
 };
 

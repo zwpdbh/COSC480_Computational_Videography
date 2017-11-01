@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/COSC480.dir/main.cpp.o"
   "CMakeFiles/COSC480.dir/MyLib.cpp.o"
-  "CMakeFiles/COSC480.dir/MyLine.cpp.o"
   "CMakeFiles/COSC480.dir/MyPlane.cpp.o"
   "CMakeFiles/COSC480.dir/Camera.cpp.o"
   "COSC480.pdb"

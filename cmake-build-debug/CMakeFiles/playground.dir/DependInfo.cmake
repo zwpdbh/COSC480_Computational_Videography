@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zw/code/C++_Projects/COSC480/Camera.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir/Camera.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/MyLib.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir/MyLib.cpp.o"
-  "/Users/zw/code/C++_Projects/COSC480/MyLine.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir/MyLine.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/MyPlane.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir/MyPlane.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/playground.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir/playground.cpp.o"
   )

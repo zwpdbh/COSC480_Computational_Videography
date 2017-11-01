@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/playground.dir/playground.cpp.o"
   "CMakeFiles/playground.dir/MyLib.cpp.o"
-  "CMakeFiles/playground.dir/MyLine.cpp.o"
   "CMakeFiles/playground.dir/MyPlane.cpp.o"
   "CMakeFiles/playground.dir/Camera.cpp.o"
   "playground.pdb"

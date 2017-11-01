@@ -13,6 +13,8 @@ math.h
 -
 MyLib.h
 /Users/zw/code/C++_Projects/COSC480/MyLib.h
+opencv2/core/eigen.hpp
+-
 
 /Users/zw/code/C++_Projects/COSC480/Camera.h
 Eigen/Dense

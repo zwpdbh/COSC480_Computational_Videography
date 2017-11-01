@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -105,33 +105,9 @@ CMakeFiles/COSC480.dir/MyLib.cpp.o.provides: CMakeFiles/COSC480.dir/MyLib.cpp.o.
 CMakeFiles/COSC480.dir/MyLib.cpp.o.provides.build: CMakeFiles/COSC480.dir/MyLib.cpp.o
 
 
-CMakeFiles/COSC480.dir/MyLine.cpp.o: CMakeFiles/COSC480.dir/flags.make
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../MyLine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COSC480.dir/MyLine.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/MyLine.cpp.o -c /Users/zw/code/C++_Projects/COSC480/MyLine.cpp
-
-CMakeFiles/COSC480.dir/MyLine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COSC480.dir/MyLine.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/MyLine.cpp > CMakeFiles/COSC480.dir/MyLine.cpp.i
-
-CMakeFiles/COSC480.dir/MyLine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COSC480.dir/MyLine.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/MyLine.cpp -o CMakeFiles/COSC480.dir/MyLine.cpp.s
-
-CMakeFiles/COSC480.dir/MyLine.cpp.o.requires:
-
-.PHONY : CMakeFiles/COSC480.dir/MyLine.cpp.o.requires
-
-CMakeFiles/COSC480.dir/MyLine.cpp.o.provides: CMakeFiles/COSC480.dir/MyLine.cpp.o.requires
-	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyLine.cpp.o.provides.build
-.PHONY : CMakeFiles/COSC480.dir/MyLine.cpp.o.provides
-
-CMakeFiles/COSC480.dir/MyLine.cpp.o.provides.build: CMakeFiles/COSC480.dir/MyLine.cpp.o
-
-
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: CMakeFiles/COSC480.dir/flags.make
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../MyPlane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COSC480.dir/MyPlane.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COSC480.dir/MyPlane.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/MyPlane.cpp.o -c /Users/zw/code/C++_Projects/COSC480/MyPlane.cpp
 
 CMakeFiles/COSC480.dir/MyPlane.cpp.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/COSC480.dir/MyPlane.cpp.o.provides.build: CMakeFiles/COSC480.dir/MyPl
 
 CMakeFiles/COSC480.dir/Camera.cpp.o: CMakeFiles/COSC480.dir/flags.make
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COSC480.dir/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COSC480.dir/Camera.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/Camera.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Camera.cpp
 
 CMakeFiles/COSC480.dir/Camera.cpp.i: cmake_force
@@ -181,7 +157,6 @@ CMakeFiles/COSC480.dir/Camera.cpp.o.provides.build: CMakeFiles/COSC480.dir/Camer
 COSC480_OBJECTS = \
 "CMakeFiles/COSC480.dir/main.cpp.o" \
 "CMakeFiles/COSC480.dir/MyLib.cpp.o" \
-"CMakeFiles/COSC480.dir/MyLine.cpp.o" \
 "CMakeFiles/COSC480.dir/MyPlane.cpp.o" \
 "CMakeFiles/COSC480.dir/Camera.cpp.o"
 
@@ -190,12 +165,11 @@ COSC480_EXTERNAL_OBJECTS =
 
 COSC480: CMakeFiles/COSC480.dir/main.cpp.o
 COSC480: CMakeFiles/COSC480.dir/MyLib.cpp.o
-COSC480: CMakeFiles/COSC480.dir/MyLine.cpp.o
 COSC480: CMakeFiles/COSC480.dir/MyPlane.cpp.o
 COSC480: CMakeFiles/COSC480.dir/Camera.cpp.o
 COSC480: CMakeFiles/COSC480.dir/build.make
 COSC480: CMakeFiles/COSC480.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable COSC480"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable COSC480"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COSC480.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -205,7 +179,6 @@ CMakeFiles/COSC480.dir/build: COSC480
 
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/main.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/MyLib.cpp.o.requires
-CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/MyLine.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/MyPlane.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/Camera.cpp.o.requires
 

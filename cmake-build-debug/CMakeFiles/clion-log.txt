@@ -1,4 +1,4 @@
-"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zw/code/C++_Projects/COSC480
+"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zw/code/C++_Projects/COSC480
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/zw/code/C++_Projects/COSC480/cmake-build-debug

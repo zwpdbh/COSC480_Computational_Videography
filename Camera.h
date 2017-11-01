@@ -8,25 +8,59 @@
 #include <Eigen/Dense>
 #include <Eigen/Geometry>
 #include <opencv2/core.hpp>
+#include "MyPlane.h"
 
 class Camera {
 private:
-    Eigen::Matrix<double, 3, 4> extrinsics;
-    Eigen::Matrix<double, 3, 3> intrinsics;
-    Eigen::Matrix<double, 3, 3> rotation;
     Eigen::Vector3d translation;
+    Eigen::Matrix<double, 4, 4> transation_Matrix;
+
+    Eigen::Matrix<double, 3, 3> rotation;
+    Eigen::Matrix<double, 4, 4> rotation_H;
+
+    Eigen::Matrix<double, 3, 4> extrinsics;
+
+    Eigen::Matrix<double, 3, 3> intrinsics;
+    // p = intrinsic * extrinsic = 3 by 3 : 3 by 4 = 3*4
+    Eigen::Matrix<double, 3, 4> projective;
+    Eigen::Matrix<double, 4, 3> pseudoInverse;
+
+    Eigen::Vector3d cameraCenter;
+
+    MyPlane pi = MyPlane(Eigen::Vector3d(0,0,0), Eigen::Vector3d(0, 1, 0));
+
+    // these 3 variables represent the ground plane setting
+    int gridRadius = 0;
+    int gridStep = 0;
+    int atHeight = 0;
+
+    std::vector<cv::Point3_<int>> coordinates;
+    std::vector<cv::Point_<double>> projectedCoordinates;
+
+    std::vector<cv::Point_<double>> projectedLeftEdgePoints;
+    std::vector<cv::Point_<double>> projectedRightEdgePoints;
+    std::vector<cv::Point_<double>> projectedUpperEdgePoints;
+    std::vector<cv::Point_<double>> projectedBottomEdgePoints;
+
+    // helper methods
+    Eigen::Vector3d updateCameraCenter();
 
 public:
-    const void updateCameraSetting(double thetaX, double thetaY, double thetaZ, const Eigen::Vector3d &translation, double focalLength, double cu, double cv);
-    cv::Point getPorjectedPointOnImageFrom(const cv::Point3d &x);
+    Camera();
 
-    const Eigen::Matrix<double, 3, 4> &getExtrinsics() const;
+    void updateCameraSetting(double thetaX, double thetaY, double thetaZ, const Eigen::Vector3d &translation, double focalLength, double cu, double cv);
+    cv::Point_<double> project3DPointOntoImage(const cv::Point3_<double>& p);
+    void setReferencePlane();
+    void setReferencePlaneParameters(int gridStep, int gridRadius, int atHeight);
+    Eigen::Vector3d getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi);
 
-    const Eigen::Matrix<double, 3, 3> &getIntrinsics() const;
+    Eigen::Matrix<double, 3, 4>& getExtrinsics() const;
+    Eigen::Matrix<double, 3, 3>& getIntrinsics() const;
+    Eigen::Matrix<double, 3, 3>& getRotation() const;
+    Eigen::Vector3d &getTranslation() const;
 
-    const Eigen::Matrix<double, 3, 3> &getRotation() const;
+    Eigen::Matrix<double, 4, 4>& getPseudoInverse() const;
 
-    const Eigen::Vector3d &getTranslation() const;
 };
 
 
