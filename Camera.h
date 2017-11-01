@@ -34,13 +34,13 @@ private:
     int gridStep = 0;
     int atHeight = 0;
 
-    std::vector<cv::Point3_<int>> coordinates;
-    std::vector<cv::Point_<double>> projectedCoordinates;
+    std::vector<cv::Point3_<int> > coordinates;
+    std::vector<cv::Point_<double> > projectedCoordinates;
 
-    std::vector<cv::Point_<double>> projectedLeftEdgePoints;
-    std::vector<cv::Point_<double>> projectedRightEdgePoints;
-    std::vector<cv::Point_<double>> projectedUpperEdgePoints;
-    std::vector<cv::Point_<double>> projectedBottomEdgePoints;
+    std::vector<cv::Point_<double> > projectedLeftEdgePoints;
+    std::vector<cv::Point_<double> > projectedRightEdgePoints;
+    std::vector<cv::Point_<double> > projectedUpperEdgePoints;
+    std::vector<cv::Point_<double> > projectedBottomEdgePoints;
 
     // helper methods
     Eigen::Vector3d updateCameraCenter();
@@ -52,14 +52,13 @@ public:
     cv::Point_<double> project3DPointOntoImage(const cv::Point3_<double>& p);
     void setReferencePlane();
     void setReferencePlaneParameters(int gridStep, int gridRadius, int atHeight);
-    Eigen::Vector3d getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi);
 
-    Eigen::Matrix<double, 3, 4>& getExtrinsics() const;
-    Eigen::Matrix<double, 3, 3>& getIntrinsics() const;
-    Eigen::Matrix<double, 3, 3>& getRotation() const;
-    Eigen::Vector3d &getTranslation() const;
-
-    Eigen::Matrix<double, 4, 4>& getPseudoInverse() const;
+    const Eigen::Vector3d getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi);
+    const Eigen::Matrix<double, 3, 4>& getExtrinsics() const;
+    const Eigen::Matrix<double, 3, 3>& getIntrinsics() const;
+    const Eigen::Matrix<double, 3, 3>& getRotation() const;
+    const Eigen::Vector3d &getTranslation() const;
+    const Eigen::Matrix<double, 4, 3>& getPseudoInverse() const;
 
 };
 

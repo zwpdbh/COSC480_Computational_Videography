@@ -4,30 +4,20 @@
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../Camera.cpp
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../Camera.h
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyLib.h
-CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyLine.h
 CMakeFiles/COSC480.dir/Camera.cpp.o: ../MyPlane.h
 
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../Camera.h
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../MyLib.cpp
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../MyLib.h
-CMakeFiles/COSC480.dir/MyLib.cpp.o: ../MyLine.h
 CMakeFiles/COSC480.dir/MyLib.cpp.o: ../MyPlane.h
-
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../Camera.h
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../MyLib.h
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../MyLine.cpp
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../MyLine.h
-CMakeFiles/COSC480.dir/MyLine.cpp.o: ../MyPlane.h
 
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../Camera.h
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../MyLib.h
-CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../MyLine.h
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../MyPlane.cpp
 CMakeFiles/COSC480.dir/MyPlane.cpp.o: ../MyPlane.h
 
 CMakeFiles/COSC480.dir/main.cpp.o: ../Camera.h
 CMakeFiles/COSC480.dir/main.cpp.o: ../MyLib.h
-CMakeFiles/COSC480.dir/main.cpp.o: ../MyLine.h
 CMakeFiles/COSC480.dir/main.cpp.o: ../MyPlane.h
 CMakeFiles/COSC480.dir/main.cpp.o: ../main.cpp
 

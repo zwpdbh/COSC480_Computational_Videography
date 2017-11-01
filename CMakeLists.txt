@@ -5,10 +5,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-I/usr/local/Cellar/eigen/3.3.4/include/eigen3/ \
     -I/usr/local/Cellar/opencv/3.3.0_3/include/opencv \
     -I/usr/local/Cellar/opencv/3.3.0_3/include \
-    -L/usr/local/Cellar/opencv/3.3.0_3/lib
+    -L/usr/local/Cellar/opencv/3.3.0_3/lib \
     -lopencv_superres \
     -lopencv_videostab \
     -lopencv_photo \
+    -lopencv_videoio \
     -lopencv_face \
     -lopencv_fuzzy \
     -lopencv_hdf \
