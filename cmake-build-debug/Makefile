@@ -226,6 +226,36 @@ MyPlane.cpp.s:
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.s
 .PHONY : MyPlane.cpp.s
 
+VideoProcess.o: VideoProcess.cpp.o
+
+.PHONY : VideoProcess.o
+
+# target to build an object file
+VideoProcess.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.o
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.o
+.PHONY : VideoProcess.cpp.o
+
+VideoProcess.i: VideoProcess.cpp.i
+
+.PHONY : VideoProcess.i
+
+# target to preprocess a source file
+VideoProcess.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.i
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.i
+.PHONY : VideoProcess.cpp.i
+
+VideoProcess.s: VideoProcess.cpp.s
+
+.PHONY : VideoProcess.s
+
+# target to generate assembly for a file
+VideoProcess.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.s
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.s
+.PHONY : VideoProcess.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -299,6 +329,9 @@ help:
 	@echo "... MyPlane.o"
 	@echo "... MyPlane.i"
 	@echo "... MyPlane.s"
+	@echo "... VideoProcess.o"
+	@echo "... VideoProcess.i"
+	@echo "... VideoProcess.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

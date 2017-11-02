@@ -16,6 +16,9 @@ CMakeFiles/playground.dir/MyPlane.cpp.o: ../MyLib.h
 CMakeFiles/playground.dir/MyPlane.cpp.o: ../MyPlane.cpp
 CMakeFiles/playground.dir/MyPlane.cpp.o: ../MyPlane.h
 
+CMakeFiles/playground.dir/VideoProcess.cpp.o: ../VideoProcess.cpp
+CMakeFiles/playground.dir/VideoProcess.cpp.o: ../VideoProcess.h
+
 CMakeFiles/playground.dir/playground.cpp.o: ../Camera.h
 CMakeFiles/playground.dir/playground.cpp.o: ../MyLib.h
 CMakeFiles/playground.dir/playground.cpp.o: ../MyPlane.h
