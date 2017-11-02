@@ -3,7 +3,6 @@
 //
 
 #include <opencv2/video.hpp>
-#include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <iostream>
 
@@ -12,8 +11,6 @@
 
 using namespace cv;
 using namespace std;
-
-void processVideo(string videoFilename);
 
 int main(int argc, char* argv[]) {
     Mat originalFrame;
