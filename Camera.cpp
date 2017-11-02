@@ -6,6 +6,7 @@
 #include <math.h>
 #include "MyLib.h"
 #include <opencv2/core/eigen.hpp>
+#include <opencv2/imgproc.hpp>
 
 using namespace std;
 using namespace Eigen;
@@ -138,6 +139,24 @@ void Camera::setReferencePlaneParameters(int gridStep, int gridRadius, int atHei
     this->atHeight = atHeight;
 }
 
+void Camera::drawReferencePlaneOnFrame(cv::Mat &frame) {
+    for (unsigned long i = 0; i < projectedLeftEdgePoints.size(); i++) {
+        cv::line(frame, projectedLeftEdgePoints.at(i), projectedRightEdgePoints.at(i), cv::Scalar_<int>(255, 0, 0), 1);
+    }
+    for (unsigned long i = 0; i < projectedUpperEdgePoints.size(); i++) {
+        cv::line(frame, projectedUpperEdgePoints.at(i), projectedBottomEdgePoints.at(i), cv::Scalar_<int>(0, 255, 0), 1);
+    }
+}
+
+void Camera::drawOriginOnFrame(cv::Mat &frame) {
+    cv::line(frame, projectedCoordinates.at(0), projectedCoordinates.at(1), cv::Scalar_<int>(255, 0, 0), 2);
+    cv::line(frame, projectedCoordinates.at(0), projectedCoordinates.at(3), cv::Scalar_<int>(0, 255, 0), 2);
+    cv::line(frame, projectedCoordinates.at(0), projectedCoordinates.at(2), cv::Scalar_<int>(0, 0, 255), 2);
+
+    cv::putText(frame, "x", projectedCoordinates.at(1), cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar_<int>(255, 0, 0), 2);
+    cv::putText(frame, "z", projectedCoordinates.at(3), cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar_<int>(0, 255, 0), 2);
+    cv::putText(frame, "y", projectedCoordinates.at(2), cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar_<int>(0, 0, 255), 2);
+}
 
 const Eigen::Vector3d Camera::getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi) {
     // step 1. get one Point on the ray by using pseudo inverse
@@ -174,3 +193,6 @@ const Matrix<double, 4, 3> &Camera::getPseudoInverse() const {
     return pseudoInverse;
 }
 
+const MyPlane &Camera::getGroundPlane() const {
+    return this->pi;
+}

@@ -59,7 +59,10 @@ public:
     const Eigen::Matrix<double, 3, 3>& getRotation() const;
     const Eigen::Vector3d &getTranslation() const;
     const Eigen::Matrix<double, 4, 3>& getPseudoInverse() const;
+    const MyPlane& getGroundPlane() const;
 
+    void drawReferencePlaneOnFrame(cv::Mat& frame);
+    void drawOriginOnFrame(cv::Mat& frame);
 };
 
 

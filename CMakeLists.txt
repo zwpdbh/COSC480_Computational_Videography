@@ -31,7 +31,23 @@ set(CMAKE_CXX_FLAGS "-I/usr/local/Cellar/eigen/3.3.4/include/eigen3/ \
 )
 
 
-set(SOURCE_FILES main.cpp MyLib.cpp MyLib.h MyPlane.cpp MyPlane.h Camera.cpp Camera.h)
+set(SOURCE_FILES
+        main.cpp
+        MyLib.cpp
+        MyLib.h
+        MyPlane.cpp
+        MyPlane.h
+        Camera.cpp
+        Camera.h
+        )
 add_executable(COSC480 ${SOURCE_FILES})
 
-add_executable(playground playground.cpp MyLib.cpp MyLib.h MyPlane.h MyPlane.cpp Camera.h Camera.cpp)
+add_executable(playground
+        playground.cpp
+        MyLib.cpp
+        MyLib.h
+        MyPlane.h
+        MyPlane.cpp
+        Camera.h
+        Camera.cpp
+        )

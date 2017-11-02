@@ -227,3 +227,27 @@ cv::Mat MyLib::getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation) {
     cv::Mat mat(3, 3, CV_32F, m);
     return mat;
 }
+
+void MyLib::comparePosition(Camera &myCamera, const cv::Point3_<double> &foot) {
+    cout << "===" << endl;
+    cout << "foot = " << foot << endl;
+
+    cv::Point3_<double> head(foot.x, foot.y + 1.3, foot.z);
+    cout << "head = " << head << endl;
+
+    cv::Point lowestPoint2D = myCamera.project3DPointOntoImage(foot);
+    cout << "lowestPoint2D = " << lowestPoint2D << endl;
+
+    // has error in this part
+
+    Eigen::Vector3d footPoint = myCamera.getIntersectionInHomogeneousCoordinates(lowestPoint2D, myCamera.getGroundPlane());
+    cout << "footPoint = " << footPoint << endl;
+
+    cv::Point headPoint2D = myCamera.project3DPointOntoImage(head);
+
+    Eigen::Vector3d headPoint = myCamera.getIntersectionInHomogeneousCoordinates(
+            headPoint2D,
+            MyPlane(Eigen::Vector3d(0, 0, 1), footPoint));
+
+    cout << "headPoint = " << headPoint << endl;
+}

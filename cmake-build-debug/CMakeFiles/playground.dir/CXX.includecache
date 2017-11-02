@@ -15,6 +15,8 @@ MyLib.h
 /Users/zw/code/C++_Projects/COSC480/MyLib.h
 opencv2/core/eigen.hpp
 -
+opencv2/imgproc.hpp
+-
 
 /Users/zw/code/C++_Projects/COSC480/Camera.h
 Eigen/Dense
@@ -65,14 +67,10 @@ Eigen/Dense
 -
 
 /Users/zw/code/C++_Projects/COSC480/playground.cpp
-Eigen/Dense
--
 iostream
 -
-MyLib.h
-/Users/zw/code/C++_Projects/COSC480/MyLib.h
-MyPlane.h
-/Users/zw/code/C++_Projects/COSC480/MyPlane.h
 Camera.h
 /Users/zw/code/C++_Projects/COSC480/Camera.h
+MyLib.h
+/Users/zw/code/C++_Projects/COSC480/MyLib.h
 

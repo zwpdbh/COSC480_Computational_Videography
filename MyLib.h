@@ -33,6 +33,9 @@ public:
     static Eigen::Vector4d getVector4dFromVector3d(const Eigen::Vector3d& v);
     static double getRadian(double degree);
     static cv::Mat getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation);
+
+    // test function
+    static void comparePosition(Camera& myCamera, const cv::Point3_<double>& foot);
 };
 
 
