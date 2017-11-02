@@ -18,6 +18,7 @@ private:
 
 
 public:
+    MyPlane() = default;
     // plane is created by a point on the plane and the norm vector goes through it
     MyPlane(const Eigen::Vector3d& normV, const Eigen::Vector3d& p);
 

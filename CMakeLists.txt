@@ -39,7 +39,7 @@ set(SOURCE_FILES
         MyPlane.h
         Camera.cpp
         Camera.h
-        VideoProcess.cpp VideoProcess.h)
+        Process.cpp Process.h Blob.cpp Blob.h)
 add_executable(COSC480 ${SOURCE_FILES})
 
 add_executable(playground
@@ -50,4 +50,4 @@ add_executable(playground
         MyPlane.cpp
         Camera.h
         Camera.cpp
-        VideoProcess.cpp VideoProcess.h)
+        Process.cpp Process.h Blob.cpp Blob.h)

@@ -13,12 +13,10 @@
 
 class MyLib {
 public:
-    MyLib();
+    MyLib() = default;
 
     static void displayOpticalFlow(cv::Mat&, std::string windowName);
     static void screenshotFromVideo(const char *fileName, std::string savedPath);
-    static void dilation(cv::Mat& src, cv::Mat& dst, int dilation_size, int dilation_type);
-    static void erosion(cv::Mat& src, cv::Mat& dst, int erosion_size, int erosion_type);
     static void getBlobs(cv::Mat& src, std::vector<cv::KeyPoint>& keyPoints);
 
     /*compute distance between two point*/

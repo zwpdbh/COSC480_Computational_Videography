@@ -47,7 +47,6 @@ private:
 
 public:
     Camera();
-
     void updateCameraSetting(double thetaX, double thetaY, double thetaZ, const Eigen::Vector3d &translation, double focalLength, double cu, double cv);
     cv::Point_<double> project3DPointOntoImage(const cv::Point3_<double>& p);
     void setReferencePlane();

@@ -126,6 +126,14 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Blob.cpp">
+			<Option target="playground"/>
+			<Option target="COSC480"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Blob.h">
+			<Option target="playground"/>
+			<Option target="COSC480"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Camera.cpp">
 			<Option target="playground"/>
 			<Option target="COSC480"/>
@@ -150,11 +158,11 @@
 			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
-		<Unit filename="/Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp">
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Process.cpp">
 			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>
-		<Unit filename="/Users/zw/code/C++_Projects/COSC480/VideoProcess.h">
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Process.h">
 			<Option target="playground"/>
 			<Option target="COSC480"/>
 		</Unit>

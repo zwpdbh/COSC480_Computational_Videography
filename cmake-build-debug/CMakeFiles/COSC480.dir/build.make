@@ -153,28 +153,52 @@ CMakeFiles/COSC480.dir/Camera.cpp.o.provides: CMakeFiles/COSC480.dir/Camera.cpp.
 CMakeFiles/COSC480.dir/Camera.cpp.o.provides.build: CMakeFiles/COSC480.dir/Camera.cpp.o
 
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.o: CMakeFiles/COSC480.dir/flags.make
-CMakeFiles/COSC480.dir/VideoProcess.cpp.o: ../VideoProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COSC480.dir/VideoProcess.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/VideoProcess.cpp.o -c /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp
+CMakeFiles/COSC480.dir/Process.cpp.o: CMakeFiles/COSC480.dir/flags.make
+CMakeFiles/COSC480.dir/Process.cpp.o: ../Process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/COSC480.dir/Process.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/Process.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Process.cpp
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COSC480.dir/VideoProcess.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp > CMakeFiles/COSC480.dir/VideoProcess.cpp.i
+CMakeFiles/COSC480.dir/Process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COSC480.dir/Process.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/Process.cpp > CMakeFiles/COSC480.dir/Process.cpp.i
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COSC480.dir/VideoProcess.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp -o CMakeFiles/COSC480.dir/VideoProcess.cpp.s
+CMakeFiles/COSC480.dir/Process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COSC480.dir/Process.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/Process.cpp -o CMakeFiles/COSC480.dir/Process.cpp.s
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.o.requires:
+CMakeFiles/COSC480.dir/Process.cpp.o.requires:
 
-.PHONY : CMakeFiles/COSC480.dir/VideoProcess.cpp.o.requires
+.PHONY : CMakeFiles/COSC480.dir/Process.cpp.o.requires
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.o.provides: CMakeFiles/COSC480.dir/VideoProcess.cpp.o.requires
-	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.o.provides.build
-.PHONY : CMakeFiles/COSC480.dir/VideoProcess.cpp.o.provides
+CMakeFiles/COSC480.dir/Process.cpp.o.provides: CMakeFiles/COSC480.dir/Process.cpp.o.requires
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Process.cpp.o.provides.build
+.PHONY : CMakeFiles/COSC480.dir/Process.cpp.o.provides
 
-CMakeFiles/COSC480.dir/VideoProcess.cpp.o.provides.build: CMakeFiles/COSC480.dir/VideoProcess.cpp.o
+CMakeFiles/COSC480.dir/Process.cpp.o.provides.build: CMakeFiles/COSC480.dir/Process.cpp.o
+
+
+CMakeFiles/COSC480.dir/Blob.cpp.o: CMakeFiles/COSC480.dir/flags.make
+CMakeFiles/COSC480.dir/Blob.cpp.o: ../Blob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/COSC480.dir/Blob.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COSC480.dir/Blob.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Blob.cpp
+
+CMakeFiles/COSC480.dir/Blob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COSC480.dir/Blob.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/Blob.cpp > CMakeFiles/COSC480.dir/Blob.cpp.i
+
+CMakeFiles/COSC480.dir/Blob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COSC480.dir/Blob.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/Blob.cpp -o CMakeFiles/COSC480.dir/Blob.cpp.s
+
+CMakeFiles/COSC480.dir/Blob.cpp.o.requires:
+
+.PHONY : CMakeFiles/COSC480.dir/Blob.cpp.o.requires
+
+CMakeFiles/COSC480.dir/Blob.cpp.o.provides: CMakeFiles/COSC480.dir/Blob.cpp.o.requires
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Blob.cpp.o.provides.build
+.PHONY : CMakeFiles/COSC480.dir/Blob.cpp.o.provides
+
+CMakeFiles/COSC480.dir/Blob.cpp.o.provides.build: CMakeFiles/COSC480.dir/Blob.cpp.o
 
 
 # Object files for target COSC480
@@ -183,7 +207,8 @@ COSC480_OBJECTS = \
 "CMakeFiles/COSC480.dir/MyLib.cpp.o" \
 "CMakeFiles/COSC480.dir/MyPlane.cpp.o" \
 "CMakeFiles/COSC480.dir/Camera.cpp.o" \
-"CMakeFiles/COSC480.dir/VideoProcess.cpp.o"
+"CMakeFiles/COSC480.dir/Process.cpp.o" \
+"CMakeFiles/COSC480.dir/Blob.cpp.o"
 
 # External object files for target COSC480
 COSC480_EXTERNAL_OBJECTS =
@@ -192,10 +217,11 @@ COSC480: CMakeFiles/COSC480.dir/main.cpp.o
 COSC480: CMakeFiles/COSC480.dir/MyLib.cpp.o
 COSC480: CMakeFiles/COSC480.dir/MyPlane.cpp.o
 COSC480: CMakeFiles/COSC480.dir/Camera.cpp.o
-COSC480: CMakeFiles/COSC480.dir/VideoProcess.cpp.o
+COSC480: CMakeFiles/COSC480.dir/Process.cpp.o
+COSC480: CMakeFiles/COSC480.dir/Blob.cpp.o
 COSC480: CMakeFiles/COSC480.dir/build.make
 COSC480: CMakeFiles/COSC480.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable COSC480"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable COSC480"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COSC480.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,7 +233,8 @@ CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/main.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/MyLib.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/MyPlane.cpp.o.requires
 CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/Camera.cpp.o.requires
-CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/VideoProcess.cpp.o.requires
+CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/Process.cpp.o.requires
+CMakeFiles/COSC480.dir/requires: CMakeFiles/COSC480.dir/Blob.cpp.o.requires
 
 .PHONY : CMakeFiles/COSC480.dir/requires
 

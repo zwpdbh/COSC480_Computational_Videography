@@ -14,11 +14,6 @@ using namespace std;
 using namespace cv;
 
 /**
- * default constructor
- * */
-MyLib::MyLib() {}
-
-/**
  * static method which show the optical flow result
  */
 void MyLib::displayOpticalFlow(cv::Mat& flow, std::string windowName) {
@@ -106,34 +101,6 @@ void MyLib::screenshotFromVideo(const char *fileName, std::string savedPath) {
 
     cvReleaseCapture(&capture);
     cvDestroyWindow(windowName);
-}
-
-
-
-/**
- * dilation
- */
-void MyLib::dilation(cv::Mat& src, cv::Mat& dst, int dilation_size, int dilation_type) {
-    Mat kernel = getStructuringElement(
-            dilation_type,
-            Size_<int>(2 * dilation_size + 1, 2 * dilation_size + 1),
-            Point_<int>(dilation_size, dilation_size)
-    );
-
-    dilate(src, dst, kernel);
-}
-
-/**
- * erosion
- */
-void MyLib::erosion(cv::Mat& src, cv::Mat& dst, int erosion_size = 0, int erosion_type = MORPH_RECT) {
-    Mat kernel = getStructuringElement(
-            erosion_type,
-            Size_<int>(2 * erosion_size + 1, 2*erosion_size + 1),
-            Point_<int>(erosion_size, erosion_size)
-    );
-
-    erode(src, dst, kernel);
 }
 
 
@@ -230,22 +197,18 @@ cv::Mat MyLib::getRoationMat(const Eigen::Matrix<double, 3, 3> &rotation) {
 
 void MyLib::comparePosition(Camera &myCamera, const cv::Point3_<double> &foot) {
     cout << "=======================" << endl;
-    cout << "\nfoot = \n" << foot << endl;
 
     cv::Point3_<double> head(foot.x, foot.y + 1.3, foot.z);
-    cout << "\nhead = \n" << head << endl;
-
     cv::Point lowestPoint2D = myCamera.project3DPointOntoImage(foot);
-//    cout << "\nlowestPoint2D = \n" << lowestPoint2D << endl;
 
     Eigen::Vector3d footPoint = myCamera.getIntersectionInHomogeneousCoordinates(lowestPoint2D, myCamera.getGroundPlane());
-    cout << "\nfootPoint = \n" << footPoint << endl;
-
     cv::Point headPoint2D = myCamera.project3DPointOntoImage(head);
-
     Eigen::Vector3d headPoint = myCamera.getIntersectionInHomogeneousCoordinates(
             headPoint2D,
             MyPlane(Eigen::Vector3d(0, 0, 1), footPoint));
 
+    cout << "\nfoot = \n" << foot << endl;
+    cout << "\nhead = \n" << head << endl;
+    cout << "\nfootPoint = \n" << footPoint << endl;
     cout << "\nheadPoint = \n" << headPoint << endl;
 }

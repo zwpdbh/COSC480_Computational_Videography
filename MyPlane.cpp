@@ -7,8 +7,6 @@
 #include <iostream>
 
 using namespace std;
-
-
 /**
  * a plane can be defined by a point on plane and a norm vector
  */

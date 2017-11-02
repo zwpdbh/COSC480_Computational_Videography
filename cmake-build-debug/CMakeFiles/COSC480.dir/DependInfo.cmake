@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/zw/code/C++_Projects/COSC480/Blob.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/Blob.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/Camera.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/Camera.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/MyLib.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/MyLib.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/MyPlane.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/MyPlane.cpp.o"
-  "/Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/VideoProcess.cpp.o"
+  "/Users/zw/code/C++_Projects/COSC480/Process.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/Process.cpp.o"
   "/Users/zw/code/C++_Projects/COSC480/main.cpp" "/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

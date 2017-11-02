@@ -153,28 +153,52 @@ CMakeFiles/playground.dir/Camera.cpp.o.provides: CMakeFiles/playground.dir/Camer
 CMakeFiles/playground.dir/Camera.cpp.o.provides.build: CMakeFiles/playground.dir/Camera.cpp.o
 
 
-CMakeFiles/playground.dir/VideoProcess.cpp.o: CMakeFiles/playground.dir/flags.make
-CMakeFiles/playground.dir/VideoProcess.cpp.o: ../VideoProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/playground.dir/VideoProcess.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/VideoProcess.cpp.o -c /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp
+CMakeFiles/playground.dir/Process.cpp.o: CMakeFiles/playground.dir/flags.make
+CMakeFiles/playground.dir/Process.cpp.o: ../Process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/playground.dir/Process.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/Process.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Process.cpp
 
-CMakeFiles/playground.dir/VideoProcess.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playground.dir/VideoProcess.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp > CMakeFiles/playground.dir/VideoProcess.cpp.i
+CMakeFiles/playground.dir/Process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playground.dir/Process.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/Process.cpp > CMakeFiles/playground.dir/Process.cpp.i
 
-CMakeFiles/playground.dir/VideoProcess.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playground.dir/VideoProcess.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/VideoProcess.cpp -o CMakeFiles/playground.dir/VideoProcess.cpp.s
+CMakeFiles/playground.dir/Process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playground.dir/Process.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/Process.cpp -o CMakeFiles/playground.dir/Process.cpp.s
 
-CMakeFiles/playground.dir/VideoProcess.cpp.o.requires:
+CMakeFiles/playground.dir/Process.cpp.o.requires:
 
-.PHONY : CMakeFiles/playground.dir/VideoProcess.cpp.o.requires
+.PHONY : CMakeFiles/playground.dir/Process.cpp.o.requires
 
-CMakeFiles/playground.dir/VideoProcess.cpp.o.provides: CMakeFiles/playground.dir/VideoProcess.cpp.o.requires
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.o.provides.build
-.PHONY : CMakeFiles/playground.dir/VideoProcess.cpp.o.provides
+CMakeFiles/playground.dir/Process.cpp.o.provides: CMakeFiles/playground.dir/Process.cpp.o.requires
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Process.cpp.o.provides.build
+.PHONY : CMakeFiles/playground.dir/Process.cpp.o.provides
 
-CMakeFiles/playground.dir/VideoProcess.cpp.o.provides.build: CMakeFiles/playground.dir/VideoProcess.cpp.o
+CMakeFiles/playground.dir/Process.cpp.o.provides.build: CMakeFiles/playground.dir/Process.cpp.o
+
+
+CMakeFiles/playground.dir/Blob.cpp.o: CMakeFiles/playground.dir/flags.make
+CMakeFiles/playground.dir/Blob.cpp.o: ../Blob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/playground.dir/Blob.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playground.dir/Blob.cpp.o -c /Users/zw/code/C++_Projects/COSC480/Blob.cpp
+
+CMakeFiles/playground.dir/Blob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playground.dir/Blob.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C++_Projects/COSC480/Blob.cpp > CMakeFiles/playground.dir/Blob.cpp.i
+
+CMakeFiles/playground.dir/Blob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playground.dir/Blob.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C++_Projects/COSC480/Blob.cpp -o CMakeFiles/playground.dir/Blob.cpp.s
+
+CMakeFiles/playground.dir/Blob.cpp.o.requires:
+
+.PHONY : CMakeFiles/playground.dir/Blob.cpp.o.requires
+
+CMakeFiles/playground.dir/Blob.cpp.o.provides: CMakeFiles/playground.dir/Blob.cpp.o.requires
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Blob.cpp.o.provides.build
+.PHONY : CMakeFiles/playground.dir/Blob.cpp.o.provides
+
+CMakeFiles/playground.dir/Blob.cpp.o.provides.build: CMakeFiles/playground.dir/Blob.cpp.o
 
 
 # Object files for target playground
@@ -183,7 +207,8 @@ playground_OBJECTS = \
 "CMakeFiles/playground.dir/MyLib.cpp.o" \
 "CMakeFiles/playground.dir/MyPlane.cpp.o" \
 "CMakeFiles/playground.dir/Camera.cpp.o" \
-"CMakeFiles/playground.dir/VideoProcess.cpp.o"
+"CMakeFiles/playground.dir/Process.cpp.o" \
+"CMakeFiles/playground.dir/Blob.cpp.o"
 
 # External object files for target playground
 playground_EXTERNAL_OBJECTS =
@@ -192,10 +217,11 @@ playground: CMakeFiles/playground.dir/playground.cpp.o
 playground: CMakeFiles/playground.dir/MyLib.cpp.o
 playground: CMakeFiles/playground.dir/MyPlane.cpp.o
 playground: CMakeFiles/playground.dir/Camera.cpp.o
-playground: CMakeFiles/playground.dir/VideoProcess.cpp.o
+playground: CMakeFiles/playground.dir/Process.cpp.o
+playground: CMakeFiles/playground.dir/Blob.cpp.o
 playground: CMakeFiles/playground.dir/build.make
 playground: CMakeFiles/playground.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable playground"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/playground.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,7 +233,8 @@ CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/playground.cpp.o.r
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/MyLib.cpp.o.requires
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/MyPlane.cpp.o.requires
 CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/Camera.cpp.o.requires
-CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/VideoProcess.cpp.o.requires
+CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/Process.cpp.o.requires
+CMakeFiles/playground.dir/requires: CMakeFiles/playground.dir/Blob.cpp.o.requires
 
 .PHONY : CMakeFiles/playground.dir/requires
 

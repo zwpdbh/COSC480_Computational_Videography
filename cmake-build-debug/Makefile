@@ -136,6 +136,36 @@ COSC480/fast:
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/build
 .PHONY : COSC480/fast
 
+Blob.o: Blob.cpp.o
+
+.PHONY : Blob.o
+
+# target to build an object file
+Blob.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Blob.cpp.o
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Blob.cpp.o
+.PHONY : Blob.cpp.o
+
+Blob.i: Blob.cpp.i
+
+.PHONY : Blob.i
+
+# target to preprocess a source file
+Blob.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Blob.cpp.i
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Blob.cpp.i
+.PHONY : Blob.cpp.i
+
+Blob.s: Blob.cpp.s
+
+.PHONY : Blob.s
+
+# target to generate assembly for a file
+Blob.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Blob.cpp.s
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Blob.cpp.s
+.PHONY : Blob.cpp.s
+
 Camera.o: Camera.cpp.o
 
 .PHONY : Camera.o
@@ -226,35 +256,35 @@ MyPlane.cpp.s:
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/MyPlane.cpp.s
 .PHONY : MyPlane.cpp.s
 
-VideoProcess.o: VideoProcess.cpp.o
+Process.o: Process.cpp.o
 
-.PHONY : VideoProcess.o
+.PHONY : Process.o
 
 # target to build an object file
-VideoProcess.cpp.o:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.o
-	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.o
-.PHONY : VideoProcess.cpp.o
+Process.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Process.cpp.o
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Process.cpp.o
+.PHONY : Process.cpp.o
 
-VideoProcess.i: VideoProcess.cpp.i
+Process.i: Process.cpp.i
 
-.PHONY : VideoProcess.i
+.PHONY : Process.i
 
 # target to preprocess a source file
-VideoProcess.cpp.i:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.i
-	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.i
-.PHONY : VideoProcess.cpp.i
+Process.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Process.cpp.i
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Process.cpp.i
+.PHONY : Process.cpp.i
 
-VideoProcess.s: VideoProcess.cpp.s
+Process.s: Process.cpp.s
 
-.PHONY : VideoProcess.s
+.PHONY : Process.s
 
 # target to generate assembly for a file
-VideoProcess.cpp.s:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/VideoProcess.cpp.s
-	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/VideoProcess.cpp.s
-.PHONY : VideoProcess.cpp.s
+Process.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Process.cpp.s
+	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Process.cpp.s
+.PHONY : Process.cpp.s
 
 main.o: main.cpp.o
 
@@ -320,6 +350,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... playground"
 	@echo "... COSC480"
+	@echo "... Blob.o"
+	@echo "... Blob.i"
+	@echo "... Blob.s"
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
@@ -329,9 +362,9 @@ help:
 	@echo "... MyPlane.o"
 	@echo "... MyPlane.i"
 	@echo "... MyPlane.s"
-	@echo "... VideoProcess.o"
-	@echo "... VideoProcess.i"
-	@echo "... VideoProcess.s"
+	@echo "... Process.o"
+	@echo "... Process.i"
+	@echo "... Process.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
