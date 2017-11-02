@@ -27,7 +27,7 @@ private:
 
     Eigen::Vector3d cameraCenter;
 
-    MyPlane pi = MyPlane(Eigen::Vector3d(0,0,0), Eigen::Vector3d(0, 1, 0));
+    MyPlane pi = MyPlane(Eigen::Vector3d(0, 1, 0), Eigen::Vector3d(0,0,0));
 
     // these 3 variables represent the ground plane setting
     int gridRadius = 0;
@@ -60,6 +60,7 @@ public:
     const Eigen::Vector3d &getTranslation() const;
     const Eigen::Matrix<double, 4, 3>& getPseudoInverse() const;
     const MyPlane& getGroundPlane() const;
+    const Eigen::Vector3d &getCameraCenter() const;
 
     void drawReferencePlaneOnFrame(cv::Mat& frame);
     void drawOriginOnFrame(cv::Mat& frame);

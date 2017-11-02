@@ -35,6 +35,14 @@ int main(int argc, char* argv[]) {
     cout << "extrinsics: \n" << myCamera.getExtrinsics() << endl;
 
     MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 0));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 1));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, -1));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(5, 0, -2));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 2));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 11));
+    MyLib::comparePosition(myCamera, cv::Point3_<double>(7, 0, -1.3));
+
+    cout << "camera center : \n" << myCamera.getCameraCenter() << endl;
 
     return 0;
 }

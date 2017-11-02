@@ -159,15 +159,23 @@ void Camera::drawOriginOnFrame(cv::Mat &frame) {
 }
 
 const Eigen::Vector3d Camera::getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi) {
+//    cout << imagePoint << endl;
+//    cout << pi << endl;
+
     // step 1. get one Point on the ray by using pseudo inverse
     Eigen::Vector4d pointOnRay = this->getPseudoInverse() * MyLib::getVector3dFromPoint2d(imagePoint);
+//    cout << "pointOnRay = " << pointOnRay << endl;
     Eigen::Vector4d c = MyLib::getVector4dFromVector3d(this->cameraCenter);
+//    cout << "c = " << c << endl;
 
     // step 2. get the line as Plücker matrices which is 4×4 skew-symmetric homogeneous matrix.
     Eigen::Matrix<double, 4, 4> l = pointOnRay * (c.transpose()) - (c * pointOnRay.transpose());
+//    cout << "l = \n" << l << endl;
 
     // step 3. compute intersection
     Eigen::Matrix<double, 4, 1> X = l * pi.getHomoPi();
+//    cout << "HomoPi = \n" << pi.getHomoPi() << endl;
+//    cout << "X = \n" << X << endl;
 
     // step 4. transofrm it back to Euclidean one
     return MyLib::getVector3dFromVector4d(X);
@@ -195,4 +203,8 @@ const Matrix<double, 4, 3> &Camera::getPseudoInverse() const {
 
 const MyPlane &Camera::getGroundPlane() const {
     return this->pi;
+}
+
+const Eigen::Vector3d &Camera::getCameraCenter() const {
+    return this->cameraCenter;
 }
