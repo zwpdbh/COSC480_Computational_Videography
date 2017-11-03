@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Learning_OpenGL01
+
+# Build rule for target.
+Learning_OpenGL01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Learning_OpenGL01
+.PHONY : Learning_OpenGL01
+
+# fast build rule for target.
+Learning_OpenGL01/fast:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/build
+.PHONY : Learning_OpenGL01/fast
+
+#=============================================================================
 # Target rules for targets named playground
 
 # Build rule for target.
@@ -195,6 +208,33 @@ Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/Camera.cpp.s
 	$(MAKE) -f CMakeFiles/COSC480.dir/build.make CMakeFiles/COSC480.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
+
+Learning_OpenGL/tutorial01.o: Learning_OpenGL/tutorial01.cpp.o
+
+.PHONY : Learning_OpenGL/tutorial01.o
+
+# target to build an object file
+Learning_OpenGL/tutorial01.cpp.o:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/Learning_OpenGL/tutorial01.cpp.o
+.PHONY : Learning_OpenGL/tutorial01.cpp.o
+
+Learning_OpenGL/tutorial01.i: Learning_OpenGL/tutorial01.cpp.i
+
+.PHONY : Learning_OpenGL/tutorial01.i
+
+# target to preprocess a source file
+Learning_OpenGL/tutorial01.cpp.i:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/Learning_OpenGL/tutorial01.cpp.i
+.PHONY : Learning_OpenGL/tutorial01.cpp.i
+
+Learning_OpenGL/tutorial01.s: Learning_OpenGL/tutorial01.cpp.s
+
+.PHONY : Learning_OpenGL/tutorial01.s
+
+# target to generate assembly for a file
+Learning_OpenGL/tutorial01.cpp.s:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/Learning_OpenGL/tutorial01.cpp.s
+.PHONY : Learning_OpenGL/tutorial01.cpp.s
 
 MyLib.o: MyLib.cpp.o
 
@@ -348,6 +388,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Learning_OpenGL01"
 	@echo "... playground"
 	@echo "... COSC480"
 	@echo "... Blob.o"
@@ -356,6 +397,9 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
+	@echo "... Learning_OpenGL/tutorial01.o"
+	@echo "... Learning_OpenGL/tutorial01.i"
+	@echo "... Learning_OpenGL/tutorial01.s"
 	@echo "... MyLib.o"
 	@echo "... MyLib.i"
 	@echo "... MyLib.s"

@@ -10,7 +10,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    double thetaX = 30;
+    double thetaX = 0;
     double thetaY = 0;
     double thetaZ = 0;
 

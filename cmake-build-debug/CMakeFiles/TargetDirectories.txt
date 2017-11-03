@@ -1,4 +1,5 @@
 /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/Learning_OpenGL01.dir
 /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/playground.dir
 /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles/COSC480.dir

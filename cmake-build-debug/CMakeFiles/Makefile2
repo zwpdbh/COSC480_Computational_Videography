@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /Users/zw/code/C++_Projects/COSC480
 CMAKE_BINARY_DIR = /Users/zw/code/C++_Projects/COSC480/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/Learning_OpenGL01.dir
+
+# All Build rule for target.
+CMakeFiles/Learning_OpenGL01.dir/all:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/depend
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target Learning_OpenGL01"
+.PHONY : CMakeFiles/Learning_OpenGL01.dir/all
+
+# Include target in all.
+all: CMakeFiles/Learning_OpenGL01.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Learning_OpenGL01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Learning_OpenGL01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Learning_OpenGL01.dir/rule
+
+# Convenience name for target.
+Learning_OpenGL01: CMakeFiles/Learning_OpenGL01.dir/rule
+
+.PHONY : Learning_OpenGL01
+
+# clean rule for target.
+CMakeFiles/Learning_OpenGL01.dir/clean:
+	$(MAKE) -f CMakeFiles/Learning_OpenGL01.dir/build.make CMakeFiles/Learning_OpenGL01.dir/clean
+.PHONY : CMakeFiles/Learning_OpenGL01.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Learning_OpenGL01.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/playground.dir
 
 # All Build rule for target.
 CMakeFiles/playground.dir/all:
 	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/depend
 	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/CMakeFiles --progress-num=10,11,12,13,14,15,16 "Built target playground"
 .PHONY : CMakeFiles/playground.dir/all
 
 # Include target in all.

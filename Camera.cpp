@@ -28,9 +28,9 @@ void Camera::updateCameraSetting(double thetaX, double thetaY, double thetaZ, co
     double rZ = MyLib::getRadian(thetaZ);
 
     this->translation << -translation[0], -translation[1], -translation[2];
-    this->transation_Matrix << 1, 0, 0, translation[0],
-            0, 1, 0, translation[1],
-            0, 0, 1, translation[2],
+    this->transation_Matrix << 1, 0, 0, this->translation[0],
+            0, 1, 0, this->translation[1],
+            0, 0, 1, this->translation[2],
             0, 0, 0, 1;
 
     Eigen::Matrix<double, 4, 4> rotationX;
@@ -59,9 +59,9 @@ void Camera::updateCameraSetting(double thetaX, double thetaY, double thetaZ, co
             rotation_H(2, 0), rotation_H(2, 1), rotation_H(2, 2);
 
 
-    this->extrinsics << rotation(0, 0), rotation(0, 1), rotation(0, 2), translation[0],
-            rotation(1, 0), rotation(1, 1), rotation(1, 2), translation[1],
-            rotation(2, 0), rotation(2, 1), rotation(2, 2), translation[2];
+    this->extrinsics << rotation(0, 0), rotation(0, 1), rotation(0, 2), this->translation[0],
+            rotation(1, 0), rotation(1, 1), rotation(1, 2), this->translation[1],
+            rotation(2, 0), rotation(2, 1), rotation(2, 2), this->translation[2];
 
     this->intrinsics << focalLength, 0, cu,
         0, focalLength, cv,
@@ -201,3 +201,5 @@ const MyPlane &Camera::getGroundPlane() const {
 const Eigen::Vector3d &Camera::getCameraCenter() const {
     return this->cameraCenter;
 }
+
+

@@ -13,7 +13,10 @@ Process::Process(const Camera &camera) {
 
 /**return the find contours from image*/
 void Process::findContours(const cv::Mat& image) const {
-//    cv::findContours(image, this->contours, this->hierarchy, 1, 1);
+//    std::vector<std::vector<cv::Point_<double>>> test;
+//    std::vector<cv::Vec4i> hierarchy;
+//    cv::findContours(image, test, hierarchy, 1, 1);
+
     if (this->contours.empty()) {
         std::cerr << "found error" << std::endl;
     } else {

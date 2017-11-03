@@ -37,6 +37,64 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Learning_OpenGL01">
+				<Option output="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Learning_OpenGL01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 Learning_OpenGL01"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Learning_OpenGL01/fast">
+				<Option output="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Learning_OpenGL01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 Learning_OpenGL01/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="playground">
 				<Option output="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug/playground" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/zw/code/C++_Projects/COSC480/cmake-build-debug"/>
@@ -44,6 +102,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -66,6 +131,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -88,6 +160,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -110,6 +189,13 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/AntTweakBar-1.16/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glfw-3.1.2/include/GLFW"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glm-0.9.7.1"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/glew-1.13.0/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/assimp-3.0.1270/include"/>
+					<Add directory="/Users/zw/local/opengl_tutorial/external/bullet-2.81-rev2613/src"/>
+					<Add directory="/Users/zw/code/C++_Projects/COSC480/."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -141,6 +227,9 @@
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Camera.h">
 			<Option target="playground"/>
 			<Option target="COSC480"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C++_Projects/COSC480/Learning_OpenGL/tutorial01.cpp">
+			<Option target="Learning_OpenGL01"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C++_Projects/COSC480/MyLib.cpp">
 			<Option target="playground"/>

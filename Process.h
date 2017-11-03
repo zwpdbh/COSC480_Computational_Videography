@@ -15,13 +15,14 @@ class Process {
 private:
     Camera camera;
     std::vector<std::vector<cv::Point_<double>>> contours;
+
     std::vector<cv::Vec4i> hierarchy;
     cv::Ptr<cv::BackgroundSubtractorMOG2> pMOG2;
     std::vector<Blob> blobs;
 
 public:
     /**constructors*/
-    Process() = default;
+//    Process() = default;
     explicit Process(const Camera&);
 
     /**different method to process image frame*/
