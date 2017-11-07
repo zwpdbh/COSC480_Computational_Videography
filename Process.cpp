@@ -3,6 +3,8 @@
 //
 
 #include "Process.h"
+#include "Blob.h"
+
 /**Constructor
  @param camera is a camera model which includes settings and operations included in camera*/
 Process::Process(const Camera &camera) {
@@ -12,24 +14,27 @@ Process::Process(const Camera &camera) {
 
 
 /**return the find contours from image*/
-void Process::findContours(const cv::Mat& image) const {
+void Process::findContours(cv::Mat& image) {
 //    std::vector<std::vector<cv::Point_<double>>> test;
 //    std::vector<cv::Vec4i> hierarchy;
 //    cv::findContours(image, test, hierarchy, 1, 1);
-
-    if (this->contours.empty()) {
-        std::cerr << "found error" << std::endl;
-    } else {
-        cv::findContours(image, this->contours, this->hierarchy, 1, 1);
-    }
+    std::cout << image.size << std::endl;
+    cv::findContours(image, this->contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE);
+    std::cout << "anything" << std::endl;
+//    if (this->contours.empty()) {
+//        std::cerr << "found error" << std::endl;
+//    } else {
+//        cv::findContours(image, this->contours, this->hierarchy, 1, 1);
+//    }
 
 }
 
 /**create Blobs from contours
  @param contours are array of contours*/
 void Process::getBlobsFromContours() {
-    for (const std::vector<cv::Point_<double>>& each: contours) {
-        Blob blob(each, this->camera);
+    Blob::setCamera(this->camera);
+    for (const std::vector<cv::Point>& each: contours) {
+        Blob blob(each);
         if (blob.getMaxy() - blob.getMiny() > 20) {
             this->blobs.push_back(blob);
         }

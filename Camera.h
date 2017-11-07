@@ -52,7 +52,7 @@ public:
     void setReferencePlane();
     void setReferencePlaneParameters(int gridStep, int gridRadius, int atHeight);
 
-    const Eigen::Vector3d getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi);
+    const Eigen::Vector3d getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi) const;
     const Eigen::Matrix<double, 3, 4>& getExtrinsics() const;
     const Eigen::Matrix<double, 3, 3>& getIntrinsics() const;
     const Eigen::Matrix<double, 3, 3>& getRotation() const;

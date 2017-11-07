@@ -65,10 +65,10 @@ int main(int argc, char* argv[]) {
 
         originalFrame = frame.clone();
         /**process each video frame*/
-        process.toBinaryFrame(frame);
         process.applyBackgroundForegroundSubtraction(frame);
         process.erosion(frame, 2, MORPH_ELLIPSE);
         process.dilation(frame, 2, MORPH_ELLIPSE);
+//        cv::findContours(frame, process.c)
         process.findContours(frame);
         process.getBlobsFromContours();
         cout << "There are total " << process.getBlobs().size() << "blobs. \n" << endl;

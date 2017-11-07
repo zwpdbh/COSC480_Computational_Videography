@@ -83,6 +83,8 @@ Eigen/Dense
 /Users/zw/code/C++_Projects/COSC480/Process.cpp
 Process.h
 /Users/zw/code/C++_Projects/COSC480/Process.h
+Blob.h
+/Users/zw/code/C++_Projects/COSC480/Blob.h
 
 /Users/zw/code/C++_Projects/COSC480/Process.h
 Camera.h
@@ -98,8 +100,6 @@ Blob.h
 
 /Users/zw/code/C++_Projects/COSC480/main.cpp
 opencv2/video.hpp
--
-opencv2/imgcodecs.hpp
 -
 opencv2/highgui.hpp
 -

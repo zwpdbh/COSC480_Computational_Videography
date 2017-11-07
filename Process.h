@@ -14,9 +14,9 @@
 class Process {
 private:
     Camera camera;
-    std::vector<std::vector<cv::Point_<double>>> contours;
-
+    std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Vec4i> hierarchy;
+
     cv::Ptr<cv::BackgroundSubtractorMOG2> pMOG2;
     std::vector<Blob> blobs;
 
@@ -27,7 +27,7 @@ public:
 
     /**different method to process image frame*/
     void applyBackgroundForegroundSubtraction(cv::Mat& frame);
-    void findContours(const cv::Mat& image) const;
+    void findContours(cv::Mat& image);
     void toBinaryFrame(cv::Mat& frame);
     void dilation(cv::Mat& frame, int dilation_size, int dilation_type);
     void erosion(cv::Mat& frame, int erosion_size, int erosion_type);

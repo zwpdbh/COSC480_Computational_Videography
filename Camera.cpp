@@ -11,6 +11,7 @@
 using namespace std;
 using namespace Eigen;
 
+/**Default constructor*/
 Camera::Camera() {
 //    pi = MyPlane(Vector3d(0,0,0), Vector3d(0, 1, 0));
     this->coordinates.push_back(cv::Point3_<int>(0, 0, 0));
@@ -158,7 +159,7 @@ void Camera::drawOriginOnFrame(cv::Mat &frame) {
     cv::putText(frame, "y", projectedCoordinates.at(2), cv::FONT_HERSHEY_SIMPLEX, 0.6, cv::Scalar_<int>(0, 0, 255), 2);
 }
 
-const Eigen::Vector3d Camera::getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi) {
+const Eigen::Vector3d Camera::getIntersectionInHomogeneousCoordinates(const cv::Point_<double>& imagePoint, const MyPlane& pi) const{
 
     // step 1. get one Point on the ray by using pseudo inverse
     Eigen::Vector4d pointOnRay = this->getPseudoInverse() * MyLib::getVector3dFromPoint2d(imagePoint);

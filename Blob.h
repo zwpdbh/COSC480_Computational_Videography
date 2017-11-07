@@ -12,12 +12,14 @@
 
 class Blob {
 private:
-    std::vector<cv::Point_<double>> contour;
+    static Camera camera;
+
+    std::vector<cv::Point> contour;
     std::vector<cv::Point3_<double>> pointsIn3d;
 
     cv::Point_<double> lowestPoint2d;
     Eigen::Vector3d footPoint;
-    Camera camera;
+
     MyPlane wall;
 
     double minx;
@@ -29,12 +31,13 @@ private:
     void updateMaximumAndMinimum(const double& x, const double& y);
 
 public:
-    Blob() = default;
-    Blob(const std::vector<cv::Point_<double> >& contour, const Camera& camera);
+    explicit Blob(const std::vector<cv::Point>& contour);
+
+
 
     /**setters and getters*/
     void setPointsIn3d(const std::vector<Eigen::Vector3d>& pointsIn3d);
-    const std::vector<cv::Point_<double>> &getContour() const;
+    const std::vector<cv::Point> &getContour() const;
 
     const MyPlane &getWall() const;
 
@@ -45,6 +48,10 @@ public:
     double getMiny() const;
 
     double getMaxy() const;
+
+    static void setCamera(const Camera &camera);
+
+    static const Camera &getCamera();
 };
 
 

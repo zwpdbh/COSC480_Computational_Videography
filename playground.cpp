@@ -34,15 +34,18 @@ int main(int argc, char* argv[]) {
     cout << "intrinsics: \n" << myCamera.getIntrinsics() << endl;
     cout << "extrinsics: \n" << myCamera.getExtrinsics() << endl;
 
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 0));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 1));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, -1));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(5, 0, -2));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 2));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 11));
-    MyLib::comparePosition(myCamera, cv::Point3_<double>(7, 0, -1.3));
-
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 0));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, 1));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(0, 0, -1));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(5, 0, -2));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 2));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(-5, 0, 11));
+//    MyLib::comparePosition(myCamera, cv::Point3_<double>(7, 0, -1.3));
     cout << "camera center : \n" << myCamera.getCameraCenter() << endl;
+
+    Eigen::Vector4d cameraCenter(0, 1, 20, 1);
+    cout << "camera center after rotation and translation is: \n"
+         << myCamera.getExtrinsics() * cameraCenter << endl;
 
     return 0;
 }
