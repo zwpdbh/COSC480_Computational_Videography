@@ -8,7 +8,9 @@
  * This initialization goes in the methods file, not in the class declaration file.
  * That’s because the class declaration is in a header file, and a program may include a header file in
  * several other files.That would result in multiple copies of the initialization statement, which is an error.*/
-Camera Blob::camera = Camera();
+Camera Blob::camera;
+// or
+//Camera Blob::camera = Camera();
 
 Blob::Blob(const std::vector<cv::Point>& contour) {
     this->contour = contour;
